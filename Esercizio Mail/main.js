@@ -2,8 +2,8 @@ let mail = ["matteo@gmail.com", "fabio@gmail.com", "pietro@gmail.com","anna@gmai
 let newmail = prompt("Inserisci la tua email!");
 
 for(let i=0; i < mail.length; i++){
-    const newLocal = mail[i];
-    if(newmail==newLocal){
+    
+    if (newmail == mail[i]){
         console.log("La tua email corrisponde, Benvenuto!");
         break;
     }else {
