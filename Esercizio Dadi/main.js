@@ -11,7 +11,9 @@ if (sceltagiocatore=="ok"){
 
     if (sceltaComputer > sceltaComputer2){
         console.log("hai vinto");
-    }else {
+    } else if (sceltaComputer < sceltaComputer2){
         console.log("hai perso");
+    } else {
+        console.log("hai pareggiato");
     }
 }
