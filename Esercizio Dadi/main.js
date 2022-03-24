@@ -1,15 +1,15 @@
+// Alert per domanda se vuoi giocare
 const sceltagiocatore = prompt ("Vuoi giocare a dadi? Digita ok se vuoi giocare");
 
+// Condizione if per scegliere numero random
 if (sceltagiocatore=="ok"){
 
     const sceltaComputer = Math.floor(Math.random() * 7);
-    const scelta1 = parseInt(sceltaComputer);
-    console.log(`Il tuo numero è: ${scelta1}`);
+    console.log(`Il tuo numero è: ${sceltaComputer}`);
     const sceltaComputer2 = Math.floor(Math.random() * 7);
-    const scelta2 = parseInt(sceltaComputer2);
-    console.log(`Il numero del Computer è: ${scelta2}`);
+    console.log(`Il numero del Computer è: ${sceltaComputer2}`);
 
-    if (scelta1 > scelta2){
+    if (sceltaComputer > sceltaComputer2){
         console.log("hai vinto");
     }else {
         console.log("hai perso");
